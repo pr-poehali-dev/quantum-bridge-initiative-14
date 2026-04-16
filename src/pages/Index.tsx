@@ -92,7 +92,7 @@ const Index = () => {
         <nav className="relative z-10 flex items-center justify-between p-6">
           <div className="flex items-center gap-2 px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full">
             <Leaf className="w-5 h-5 text-green-400" />
-            <span className="font-medium">Зелёный дом</span>
+            <span className="font-medium">Мамедова</span>
           </div>
 
           <div className="hidden md:flex items-center gap-1">
@@ -197,6 +197,39 @@ const Index = () => {
               <h3 className="text-xl font-semibold mb-4">Просто уход</h3>
               <p className="text-white/70 leading-relaxed">Многие виды требуют минимального внимания и живут годами.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Photo Gallery Section */}
+      <section className="relative z-10 py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Галерея растений</h2>
+            <p className="text-white/70 text-lg max-w-2xl mx-auto">Красота живой природы прямо у вас дома.</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {[
+              { url: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80", name: "Монстера" },
+              { url: "https://images.unsplash.com/photo-1493500173432-1547c9b0de22?w=600&q=80", name: "Суккуленты" },
+              { url: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80", name: "Орхидея" },
+              { url: "https://images.unsplash.com/photo-1512428813834-c702c7702b78?w=600&q=80", name: "Кактус" },
+              { url: "https://images.unsplash.com/photo-1600411833196-7c1f6b1a8b90?w=600&q=80", name: "Фикус" },
+              { url: "https://images.unsplash.com/photo-1504198453319-5ce911bafcde?w=600&q=80", name: "Потос" },
+              { url: "https://images.unsplash.com/photo-1459156212016-c812468e2115?w=600&q=80", name: "Папоротник" },
+              { url: "https://images.unsplash.com/photo-1572726729207-a78d6feb18d7?w=600&q=80", name: "Алоэ" },
+            ].map((plant) => (
+              <div key={plant.name} className="group relative rounded-2xl overflow-hidden aspect-square">
+                <img
+                  src={plant.url}
+                  alt={plant.name}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                  <span className="text-white font-semibold text-lg">{plant.name}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
