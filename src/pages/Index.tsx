@@ -1,5 +1,4 @@
 import { Leaf, Droplets, Sun, Sprout, Plus, Minus, Mail, ExternalLink } from "lucide-react"
-
 import Icon from "@/components/ui/icon"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
@@ -93,7 +92,7 @@ const Index = () => {
         <nav className="relative z-10 flex items-center justify-between p-6">
           <div className="flex items-center gap-2 px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full">
             <Leaf className="w-5 h-5 text-green-400" />
-            <span className="font-medium">Mamedova</span>
+            <span className="font-medium">Зелёный дом</span>
           </div>
 
           <div className="hidden md:flex items-center gap-1">
@@ -466,7 +465,7 @@ const Index = () => {
               <div className="lg:col-span-2">
                 <div className="flex items-center gap-2 mb-6">
                   <Leaf className="w-6 h-6 text-green-400" />
-                  <span className="text-xl font-semibold">Mamedova</span>
+                  <span className="text-xl font-semibold">Зелёный дом</span>
                 </div>
                 <p className="text-white/80 leading-relaxed text-pretty">
                   Всё о комнатных растениях: уход, советы, видео и подборки для начинающих и опытных цветоводов.
@@ -538,7 +537,7 @@ const Index = () => {
             </div>
 
             <div className="border-t border-white/10 pt-8">
-              <p className="text-white/60 text-sm text-center">© 2025 Mamedova — всё о домашних растениях</p>
+              <p className="text-white/60 text-sm text-center">© 2025 Зелёный дом — всё о домашних растениях</p>
             </div>
           </div>
         </div>
