@@ -498,7 +498,7 @@ const Index = () => {
               <div className="lg:col-span-2">
                 <div className="flex items-center gap-2 mb-6">
                   <Leaf className="w-6 h-6 text-green-400" />
-                  <span className="text-xl font-semibold">Зелёный дом</span>
+                  <span className="text-xl font-semibold">Мамедова</span>
                 </div>
                 <p className="text-white/80 leading-relaxed text-pretty">
                   Всё о комнатных растениях: уход, советы, видео и подборки для начинающих и опытных цветоводов.
@@ -570,7 +570,7 @@ const Index = () => {
             </div>
 
             <div className="border-t border-white/10 pt-8">
-              <p className="text-white/60 text-sm text-center">© 2025 Зелёный дом — всё о домашних растениях</p>
+              <p className="text-white/60 text-sm text-center">© 2025 Мамедова — всё о домашних растениях</p>
             </div>
           </div>
         </div>
